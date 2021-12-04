@@ -1,0 +1,35 @@
+<% layout('/layouts/boilerplate') %> 
+        <!-- <h1>Adding an elemnet</h1>
+        <form action="/campgrounds" method="POST">
+            <label for="title">Enter title</label>
+            <input id="title" name="title" type="text" placeholder="Title">
+            <label for="des">Enter title</label>
+            <input id="des" name="description" type="text" placeholder="Description">
+            <label for="loc">Enter title</label>
+            <input id="loc" name="location" type="text" placeholder="Location">
+            <button type="submit" value="Submit">ADD</button>
+        </form> -->
+        <div class="row" >
+            <h1 class="text-center">New Campground</h1>
+<div class="col-6 offset-3">     
+        <form action="/campgrounds" method="POST" novalidate class="validate-it">
+            <div class="mb-3">
+        <label for="title" class="form-label">Enter Title</label>
+        <input type="text" id="title" class="form-control" name="title" required></div>
+        <div class="mb-3">
+            <label for="url" class="form-label">Enter image url</label>
+            <input type="text" id="url" class="form-control" name="image" required></div>
+        <div class="mb-3">
+            <label for="description" class="form-label">Enter Description</label>
+            <textarea type="text" id="description" class="form-control" name="description" required></textarea></div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Enter Price</label>
+            <div class="input-group">
+                <span class="input-group-text" id="price-label">Rs</span>
+                <input type="text" class="form-control" id="price" placeholder="0.00" aria-label="price"
+                    aria-describedby="price-label" name="price" required>
+                    
+            </div></div>
+            <button class="btn btn-success">Submit</button>
+        </form></div></div>
+     
